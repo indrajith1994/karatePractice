@@ -1,0 +1,31 @@
+<testsuite failures="0" name="src/test/java/features/sample.feature" skipped="0" tests="4" time="0.100717">
+  <testcase classname="src.test.java.features.sample" name="Print Karate Framework" time="0.006706">
+    <system-out>* print 'Karate Framework' ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.sample" name="Print Variable" time="0.009897">
+    <system-out>* print 'Karate Framework' ................................................ passed
+* def Amount = 100 ........................................................ passed
+* print Amount ............................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.sample" name="Concatination" time="0.059624">
+    <system-out>* print 'Karate Framework' ................................................ passed
+* def Amount = 100 ........................................................ passed
+* print Amount ............................................................ passed
+* def a = 10 .............................................................. passed
+* def b = 20 .............................................................. passed
+* print 'concatination = ' +a+b ........................................... passed
+* print 'Sum = ' +(a+b) ................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.sample" name="Multiplication" time="0.02449">
+    <system-out>* print 'Karate Framework' ................................................ passed
+* def Amount = 100 ........................................................ passed
+* print Amount ............................................................ passed
+* def a = 10 .............................................................. passed
+* def b = 20 .............................................................. passed
+* print 'concatination = ' +a+b ........................................... passed
+* print 'Sum = ' +(a+b) ................................................... passed
+* def a1 = 30 ............................................................. passed
+* def b1 = 10 ............................................................. passed
+* print 'Multiplication = ' + (a1*b1) ..................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/features/json.feature" skipped="0" tests="1" time="0.357419">
+  <testcase classname="src.test.java.features.json" name="json reader parser" time="0.357419">
+    <system-out>* def jsonObject = ........................................................ passed
+* print "Entire Json Array " .............................................. passed
+* print jsonObject ........................................................ passed
+* print "First Json object " .............................................. passed
+* print jsonObject[0] ..................................................... passed
+* print jsonObject[1] ..................................................... passed
+* print "First Json object's specific key " ............................... passed
+* print jsonObject[0].name ................................................ passed
+* print jsonObject[1].name ................................................ passed</system-out>
+  </testcase>
+</testsuite>

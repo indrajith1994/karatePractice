@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="1" time="1.159387">
+  <testcase classname="src.test.java.features.getapi" name="get user details" time="1.159387">
+    <system-out>Given url 'https://gorest.co.in/public/v2/users' .......................... passed
+And path '2138955' ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
