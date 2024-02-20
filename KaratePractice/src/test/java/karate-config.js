@@ -8,7 +8,7 @@ var config = {
 env: env, 
 myVarName: 'hello karate', 
 baseUrl: 'https://gorest.co.in',
-tokenID: '007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33'
+tokenID: 'a3d05172f0b2cc6e733c0edd0f29e83dc70515b1a00628ec18ed3af0af88e35e'
 }
 
 if (env == 'dev') { 
