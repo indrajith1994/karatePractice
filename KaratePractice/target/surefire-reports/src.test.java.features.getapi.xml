@@ -1,8 +1,38 @@
-<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="1" time="1.159387">
-  <testcase classname="src.test.java.features.getapi" name="get user details" time="1.159387">
+<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="1.911664">
+  <testcase classname="src.test.java.features.getapi" name="get user details" time="1.345224">
     <system-out>Given url 'https://gorest.co.in/public/v2/users' .......................... passed
-And path '2138955' ........................................................ passed
+And path '2138961' ........................................................ passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... passed</system-out>
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonRes = response .................................................. passed
+* print jsonRes ........................................................... passed
+* def name = jsonRes.name ................................................. passed
+* def email = jsonRes.email ............................................... passed
+* def id = jsonRes.id ..................................................... passed
+* print name .............................................................. passed
+* match name == 'Abani Gupta' ............................................. passed
+* match email == 'abani_gupta@dietrich-johns.test' ........................ passed
+* match id == 2138961 ..................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.getapi" name="get user details - user not found" time="0.56644">
+    <system-out>Given url 'https://gorest.co.in/public/v2/users' .......................... passed
+And path '2138961' ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def jsonRes = response .................................................. passed
+* print jsonRes ........................................................... passed
+* def name = jsonRes.name ................................................. passed
+* def email = jsonRes.email ............................................... passed
+* def id = jsonRes.id ..................................................... passed
+* print name .............................................................. passed
+* match name == 'Abani Gupta' ............................................. passed
+* match email == 'abani_gupta@dietrich-johns.test' ........................ passed
+* match id == 2138961 ..................................................... passed
+Given url 'https://gorest.co.in/public/v2/users' .......................... passed
+And path '10' ............................................................. passed
+When method GET ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
   </testcase>
 </testsuite>

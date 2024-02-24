@@ -1,6 +1,5 @@
 {
         "name": "tom",
-        "email" : "tom21@gmail.com",
         "gender": "male",
         "status": "active"
     }

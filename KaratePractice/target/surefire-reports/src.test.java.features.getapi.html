@@ -35,7 +35,7 @@
           
                     <div class="nav-count">
                                     
-                        <div class="bg-success" id="nav-pass">1</div>
+                        <div class="bg-success" id="nav-pass">2</div>
                                     
                         <div class="bg-danger" id="nav-fail">0</div>
                                   
@@ -46,12 +46,15 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2024-02-17 11:00:46 AM</div>
+                <div id="nav-date">2024-02-17 01:33:06 PM</div>
                         
       
                 <div class="nav-container">
                     <div class="nav-item passed">
                         <a href="#[1:3]">[1:3] get user details </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[2:19]">[2:19] get user details - user not found </a>
                     </div>
                 </div>
             </div>
@@ -67,20 +70,20 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">get user details </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1159</div>
+                        <div class="scenario-time passed">ms: 1345</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
                             <div class="step-cell passed">Given url 'https://gorest.co.in/public/v2/users'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">7</div>
                     </div>
-                    <div class="preformatted" data-parent="1">11:00:45.094 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="1">13:33:04.215 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row">
                         <div class="step-container" id="2">
                             <div class="step-ref passed">2</div>
-                            <div class="step-cell passed">And path '2138955'</div>
+                            <div class="step-cell passed">And path '2138961'</div>
                         </div>
                         <div class="time-cell passed">5</div>
                     </div>
@@ -89,43 +92,196 @@
                             <div class="step-ref passed">3</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">1149</div>
+                        <div class="time-cell passed">1259</div>
                     </div>
-                    <div class="preformatted" data-parent="3">11:00:45.556 request:
-1 &gt; GET https://gorest.co.in/public/v2/users/2138955
+                    <div class="preformatted" data-parent="3">13:33:04.602 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/2138961
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15)
 
-11:00:46.207 response time in milliseconds: 643.73
+13:33:05.464 response time in milliseconds: 855.74
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 856ba3e56a5d3fb3-SIN
+1 &lt; CF-RAY: 856c8306fee28994-SIN
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 17 Feb 2024 05:30:46 GMT
+1 &lt; Date: Sat, 17 Feb 2024 08:03:05 GMT
 1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=V3tCwTIaI9YLOAeU%2BdoFXggmhU%2BAva9ZJHuqc%2Bua8RMA2ukxcUP%2BYazVNYc1FGZtUXQkqYhbKCkTxke4sqDxu1kZS0GOkir60iHm4iUx0h9Fo1tCisYnjqcQYJwlrWo%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tMsMYMR7Xajn%2FgI4kROi2Pnc7r2bPU4TjhixH7Kl%2B%2FhYgfOSRcrOgu2c4%2FemXS22R9RfvhkaiHHcEMNynKAWGflWKD5qkto26Kb4jAIZYd8HrAXAe4TAgTwjZg154BE%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; alt-svc: h3=":443"; ma=86400
-1 &lt; etag: W/"f9d2b73162b992a2b92c4a85ed9f2a14"
+1 &lt; etag: W/"435939a5e112140a374f2e6be1048d3c"
 1 &lt; referrer-policy: strict-origin-when-cross-origin
 1 &lt; vary: Origin
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-download-options: noopen
 1 &lt; x-frame-options: SAMEORIGIN
 1 &lt; x-permitted-cross-domain-policies: none
-1 &lt; x-request-id: d1f25bd6-0426-494a-bc88-9ff794462a5c
-1 &lt; x-runtime: 0.025888
+1 &lt; x-request-id: 19e2e105-cc9e-4aef-9651-aaab670ca846
+1 &lt; x-runtime: 0.030692
 1 &lt; x-xss-protection: 0
-{"id":2138955,"name":"Pres. Bhagwanti Kocchar","email":"kocchar_bhagwanti_pres@keebler.example","gender":"female","status":"inactive"}</div>
+{"id":2138961,"name":"Abani Gupta","email":"abani_gupta@dietrich-johns.test","gender":"female","status":"inactive"}</div>
                     <div class="step-row">
                         <div class="step-container" id="4">
                             <div class="step-ref passed">4</div>
                             <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* print response</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="preformatted" data-parent="5">13:33:05.519 [print] {
+  "gender": "female",
+  "name": "Abani Gupta",
+  "id": 2138961,
+  "email": "abani_gupta@dietrich-johns.test",
+  "status": "inactive"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* def jsonRes = response</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* print jsonRes</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">13:33:05.521 [print] {
+  "gender": "female",
+  "name": "Abani Gupta",
+  "id": 2138961,
+  "email": "abani_gupta@dietrich-johns.test",
+  "status": "inactive"
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">* def name = jsonRes.name</div>
+                        </div>
+                        <div class="time-cell passed">20</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
+                            <div class="step-cell passed">* def email = jsonRes.email</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">* def id = jsonRes.id</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
+                            <div class="step-cell passed">* print name</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="preformatted" data-parent="11">13:33:05.561 [print] Abani Gupta</div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">* match name == 'Abani Gupta'</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
+                            <div class="step-cell passed">* match email == 'abani_gupta@dietrich-johns.test'</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">* match id == 2138961</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:19]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:19]</span><span class="scenario-name">get user details - user not found </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 566</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">Given url 'https://gorest.co.in/public/v2/users'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="15">13:33:05.597 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And path '10'</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">When method GET</div>
+                        </div>
+                        <div class="time-cell passed">561</div>
+                    </div>
+                    <div class="preformatted" data-parent="17">13:33:05.606 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/10
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.15)
+
+13:33:06.164 response time in milliseconds: 557.04
+1 &lt; 404
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 856c830bde637981-SIN
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 32
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sat, 17 Feb 2024 08:03:06 GMT
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=G9WglZhJKE50WjE0vQaYAw%2BYrODQ0pTTJlu9IihCJKnZTUKW3qdD%2B9borhYuylorzfRYBM5Kfv8b%2BTXNq8KHWVEtGCYgpZwfzGlyyJuMCppcTXKChI7eGvg%2FAlKnUVs%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; alt-svc: h3=":443"; ma=86400
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-request-id: 568ba8e7-5208-4355-ac12-d683bc92bf46
+1 &lt; x-runtime: 0.016475
+1 &lt; x-xss-protection: 0
+{"message":"Resource not found"}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
+                            <div class="step-cell passed">Then status 404</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
